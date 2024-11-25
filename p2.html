@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let w = +prompt("Enter parcel weight:"); 
+        let destination = prompt("Enter destination:"); 
+        let shippingCost = 0;
+        if (w <= 1){
+            if (destination == "Local"){
+                shippingCost = 5;
+            } 
+            else if (destination == "National"){
+                shippingCost = 8;
+            } 
+            else if (destination == "International"){
+                shippingCost = 15;
+            }
+            else{
+                console.log("invalid denstation")
+            }
+        } 
+        else if (w > 1 && w <= 5){
+            if (destination == "Local"){
+                shippingCost = 10;
+            } 
+            else if (destination == "National"){
+                shippingCost = 15;
+            } 
+            else if (destination == "International"){
+                shippingCost = 30;
+            }
+            else{
+                console.log("invalid denstation")
+            }
+        } 
+        else if (w > 5 && w <= 10){
+            if (destination == "Local"){
+                shippingCost = 20;
+            } 
+            else if (destination == "National"){
+                shippingCost = 25;
+            } 
+            else if (destination == "International"){
+                shippingCost = 50;
+            }
+            else{
+                console.log("invalid denstation")
+            }
+        } 
+        else{
+            if (destination == "Local"){
+                shippingCost = 30;
+            } 
+            else if (destination == "National"){
+                shippingCost = 35;
+            } 
+            else if (destination == "International"){
+                shippingCost = 70;
+            }
+            else{
+                console.log("invalid denstation");
+            }
+        }
+        console.log("Total shipping cost:$", shippingCost);
+    </script>
+</body>
+</html>
